@@ -8,5 +8,17 @@
 </head>
 <body>
     <h3>Hello, World!</h3>
+    <script>
+        function wait(ms) {
+            var start = Date.now(),
+                now = start;
+            while (now - start < ms) {
+                console.log(now);
+                now = Date.now();
+            }
+        }        
+        wait(10000);
+    </script>
+    Вы на сайте уже более 10 секунд. Похоже вам у нас понравилось? 
 </body>
 </html>
